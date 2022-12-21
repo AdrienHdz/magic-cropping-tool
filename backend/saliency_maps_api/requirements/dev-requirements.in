@@ -1,0 +1,14 @@
+six
+ninja
+numpy
+pandas
+matplotlib
+scikit-image
+scikit-learn
+statsmodels
+seaborn
+requests
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python
