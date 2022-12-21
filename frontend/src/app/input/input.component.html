@@ -1,0 +1,15 @@
+<input [formControl]="control" [type]="type"
+    class="block py-1.5 px-3 w-24 text-gray-200 border border-gray-400 transition
+        duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400 text-gray-700 fond-bold font-sans"
+        [placeholder]="placeholder"/>
+        <ng-container *ngIf="control.touched && control.dirty">
+            <p *ngIf="control.errors?.min" class="text-red-400">
+                Value is too low. The minimum should be 18.
+            </p>
+            <p *ngIf="control.errors?.max" class="text-red-400">
+              Value is too high. The maximum should be 2048.   
+            </p>
+            <p *ngIf="control.errors?.required" class="text-red-400">
+                Field is required.
+            </p>
+        </ng-container>
