@@ -1,0 +1,33 @@
+  <!-- The home page is inspired by the project we created in the course Complete Angular Developer by ZTM
+  https://zerotomastery.io/courses/learn-angular/
+   -->
+  <!-- Intro Section -->
+  <section class="relative overflow-hidden"> 
+    <!-- The video -->
+    <video autoplay muted loop class="w-full h-full object-cover absolute z-0">
+      <source src="assets/video/background.mp4" type="video/webm">
+    </video>
+
+    <div class="bg-gradient absolute w-full h-full z-40 opacity-90"></div>
+
+    <div class="w-full h-full absolute z-40">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+
+    <div class="container mx-auto relative z-50">
+      <div class="text-center py-20 w-full md:w-8/12 mx-auto">
+        <h1 class="text-7xl font-bold uppercase mb-10">UPLOAD & CROP!</h1>
+        <p>
+          Let a powerful AI model automatically crop your pictures according to their most interesting part!
+          Upload your picture, select your desired dimensions, and let the model magically crop it for you! 
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Main Content -->
+<app-upload></app-upload>
