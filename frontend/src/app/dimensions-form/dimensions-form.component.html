@@ -1,0 +1,14 @@
+    <form [formGroup]="registerForm">
+        <!-- width -->>
+        <div>
+            <label class="inline-block mb-2 text-gray-700 fond-bold font-sans">width</label>
+            <app-input [control]="width" type="number"
+            placeholder="400"></app-input>
+        </div>
+        <!-- height -->>
+        <div class="mb-6">
+            <label class="inline-block mb-2 text-gray-700 fond-bold font-sans">height</label>
+            <app-input [control]="height" type="number"
+            placeholder="400"></app-input>
+        </div>
+    </form>
