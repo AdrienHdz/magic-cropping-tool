@@ -28,7 +28,7 @@
         <!-- Form -->
         <form [formGroup]="registerForm" (ngSubmit)="uploadFile()">
           <div class="text-left ">
-            <img [src]='imageUrlUpload' width="500vw" height="500vh" class="mb-3 mx-auto">
+            <img [src]='imageUrlUpload' width="400vw" height="400vh" class="mb-3 mx-auto">
             <form class="flex flex-row">
               <div class=" flex flex-row mx-auto">
               <!-- width -->>
@@ -63,6 +63,6 @@
   <section #step2 *ngIf="imageUrlResponse" class="container mx-auto  bg-three p-6 mt-8">  
     <div class="rounded relative flex flex-col">
       <div class="font-bold mb-6 text-gray-700 fond-bold font-sans">Your New Resized Picture</div>
-     <img *ngIf="imageUrlResponse" [src]='imageUrlResponse' width="500px" height="500px" class="mx-auto">
+     <img *ngIf="imageUrlResponse" [src]='imageUrlResponse' width="400px" height="400px" class="mx-auto">
     </div>
   </section>
