@@ -17,6 +17,8 @@ import { DimensionsFormComponent } from './dimensions-form/dimensions-form.compo
 import { InputComponent } from './input/input.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { LicensingComponent } from './licensing/licensing.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     DimensionsFormComponent,
     InputComponent,
     SpinnerComponent,
+    PrivacyPolicyComponent,
+    LicensingComponent,
   ],
   imports: [
     BrowserModule,
