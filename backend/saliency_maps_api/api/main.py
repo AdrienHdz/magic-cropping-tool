@@ -21,10 +21,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins='http://localhost:4200',
+    allow_origins='https://magic-cropping-tool.com/',
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
 @app.post("/image", response_class=StreamingResponse)
