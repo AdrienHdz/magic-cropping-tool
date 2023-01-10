@@ -18,8 +18,8 @@ RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 COPY ./api /app/api
 
-EXPOSE 8000
+EXPOSE 8080
 
 USER app
 
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080"]
