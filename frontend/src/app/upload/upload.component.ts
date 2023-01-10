@@ -75,16 +75,13 @@ export class UploadComponent implements OnInit, AfterViewInit {
   }
 
   inputButtonClicked($event: Event) {
-    console.log('mouse click', $event)
     this.nextStep = false
   }
 
   uploadFile() {
-    console.log('registerForm value', this.registerForm.value)
     const selectedSize = this.registerForm.value;
 
     if (this.registerForm.valid) {
-      console.log('File uploaded')
       this.dataService.detectClick({
         file: this.file,
         width: selectedSize.width,
