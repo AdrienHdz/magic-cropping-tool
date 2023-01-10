@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, ReplaySubject } from 'rxjs';
 import {HttpClient, HttpParams} from '@angular/common/http'
 import { IUploadedImage } from '../interfaces/uploadedImage.interface';
+import { environment } from 'src/environments/environment.prod';
+
 
 export enum FetchingServerState {
   FETCHING = 1,
@@ -13,7 +15,7 @@ export enum FetchingServerState {
 })
 export class DataService {
 
-  private REST_API_SERVER = "http://localhost:8000";
+  private REST_API_SERVER = environment.REST_API_SERVER;
 
   private _image = new ReplaySubject<Blob>();
   public image_prediction: Observable<Blob> = this._image.asObservable()
@@ -26,7 +28,6 @@ export class DataService {
 
   
   public detectClick(uploadedImage: IUploadedImage):void {
-    console.log('clicked')
     this.getImagePrediction(uploadedImage)
   }
 
