@@ -9,13 +9,10 @@ from collections import namedtuple
 import numpy as np
 
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 from matplotlib.patches import Rectangle
-from matplotlib.collections import PatchCollection
-from PIL import Image
+from PIL import Image, ImageOps
 
-import shlex, subprocess
-import tempfile
+import subprocess
 import logging
 import cv2
 
@@ -233,7 +230,9 @@ class ImageSaliencyModel(object):
         selected_width=400,
         selected_height=400
     ):
-        img = mpimg.imread(img_path)
+        image = Image.open(img_path).convert('RGB')
+        img = np.array(ImageOps.exif_transpose(image))
+        image.close()
         img_h, img_w = img.shape[:2]
 
         if aspectRatios is None:
