@@ -65,7 +65,7 @@ export class UploadComponent implements OnInit, AfterViewInit {
     ($event.target as HTMLInputElement).files?.item(0) ?? null
 
     if(!this.file || this.file.type !== 'image/jpeg'
-    && this.file.type !== 'image/jpg'
+    && this.file.type !== 'image/jpg' && this.file.type !== 'image/png'
     ) {
       return
     }
