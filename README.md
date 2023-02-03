@@ -1,10 +1,26 @@
 <div align="center">
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQMqtARWGDM1gkgmBUC0taAlsNx90ZbV1UqIgdy0-l9otI4mp_T_vp-wBh71qjSmiaQRKt2_40jt4RP/pub?w=960&h=720"
-alt="logo" width=550px/>
+  <!-- Logo -->
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vQKggEpm0PGgmkB7LymYmHdptSFEwYXC5yecuph_0gGmZ5fW-bTIfowcDLHVHxjgKQTHq8Y21H0d5LF/pub?w=1277&h=375" alt="logo" width=550px/>
+</div>
+
+<div align="center">
+  <!-- Build status -->
+  <a href="https://travis-ci.org/MaxHalford/starboost">
+    <img src="https://img.shields.io/travis/MaxHalford/starboost/master.svg?style=flat-square" alt="build_status" />
+  </a>
+  <!-- Test coverage -->
+  <a href="https://coveralls.io/github/MaxHalford/starboost?branch=master">
+    <img src="https://coveralls.io/repos/github/MaxHalford/starboost/badge.svg?branch=master&style=flat-square" alt="test_coverage" />
+  </a>
+  <!-- License -->
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="license"/>
+  </a>
 </div>
 
 <br/>
 <br/>
+
 
 <div align="center">
 Please check out the <a href="https://maxhalford.github.io/starboost/">website</a> if you want to see the app deployed!
