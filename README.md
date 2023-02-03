@@ -13,7 +13,7 @@ Please check out the <a href="https://magic-cropping-tool.com/">website</a> if y
 
 **What is Magic Cropping Tool?**
 
-Hello! **Magic Cropping Tool** is a small open source project created by me: Adrien Hernandez. I'm a machine learning engineering specialist and Entrepreneur.
+Hello! **Magic Cropping Tool** is a small open source project created by me: [Adrien Hernandez](https://www.linkedin.com/in/adrienhernandez/). I'm a machine learning engineering specialist and Entrepreneur.
 This web app aims at showcasing my skills in **AI, software development and deployment on Cloud Platforms**.
 It is not intended to be a commercial product ever. The goal of this project is simply to demonstrate the potential of AI in practical applications and to offer users a way to interact with an AI model for picture cropping. While it is not a comprehensive solution, it offers an experience for thoses interested in exploring the capabilities of AI!
 
