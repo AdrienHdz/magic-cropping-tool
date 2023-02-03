@@ -8,7 +8,7 @@
 
 
 <div align="center">
-Please check out the <a href="https://maxhalford.github.io/starboost/">website</a> if you want to see the app deployed!
+Please check out the <a href="https://magic-cropping-tool.com/">website</a> if you want to see the app deployed!
 </div>
 
 **What is Magic Cropping Tool?**
