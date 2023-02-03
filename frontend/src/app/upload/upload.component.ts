@@ -48,7 +48,8 @@ export class UploadComponent implements OnInit, AfterViewInit {
       map(state => state == FetchingServerState.FETCHING)
     )
     this.dataService.image_prediction.subscribe((d: Blob) => {
-      this.imageUrlResponse = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(d))
+      const file = new File([d], "image.png", { type: "image/png" });
+      this.imageUrlResponse = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(file))
     })
     this.step2List.changes.subscribe(() => {
       if (this.step2List.length> 0) {
