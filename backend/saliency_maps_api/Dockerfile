@@ -9,9 +9,7 @@ RUN chown app:app /app
 
 COPY ./requirements/dev-requirements.txt /app/dev-requirements.txt
 
-RUN pip install pip-tools
-
-RUN pip-sync /app/dev-requirements.txt
+RUN pip install -r /app/dev-requirements.txt
 
 RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6  -y
