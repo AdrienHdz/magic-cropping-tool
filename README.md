@@ -24,5 +24,5 @@ alt="stack" width=550px/>
 </div>
 
 **Licensing**
-
-The artificial intelligence model used in production for this website directly comes from the amazing work done by [Twitter Research](https://github.com/twitter-research/image-crop-analysis).
+The artificial intelligence model utilized on this website in production is based on the exceptional work of [Twitter Research](https://github.com/twitter-research/image-crop-analysis).
+The html and css layout of this website draws inspiration from the [Complete Angular Developer in 2023](https://zerotomastery.io/courses/learn-angular/) course from ZTM, which I completed and found to be amazing.
